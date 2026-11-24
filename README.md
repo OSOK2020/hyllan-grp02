@@ -115,3 +115,4 @@ Tips: öppna en endpoint direkt i webbläsaren, eller `console.log` svaret, inna
 6. Merga PR:en, flytta kortet till **Klart** – och alla i gruppen kör `git pull` på main.
 
 Läs korten i listan **Läs först** på Trello-tavlan för hela arbetsflödet.
+# hyllan-grp02
