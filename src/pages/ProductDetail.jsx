@@ -5,6 +5,7 @@ import { formatPrice } from "../utils/formatPrice.js";
 import ProductGrid from "../components/ProductGrid.jsx";
 import Loading from "../components/Loading.jsx";
 import styles from "./ProductDetail.module.css";
+import ReviewList from "../components/ReviewList.jsx";
 
 function ProductDetail({ addToCart }) {
   const { id } = useParams();
@@ -70,7 +71,12 @@ function ProductDetail({ addToCart }) {
         <h2>Liknande produkter</h2>
         <ProductGrid products={similar} />
       </section>
+      <section>
+        <h2>Recensioner:</h2>
+        <ReviewList reviews={product} />
+      </section>
     </article>
+    
   );
 }
 
