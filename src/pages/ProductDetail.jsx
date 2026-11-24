@@ -52,7 +52,12 @@ function ProductDetail({ addToCart }) {
           </p>
           <p className={styles.price}>{formatPrice(product.price)}</p>
           <p>{product.description}</p>
-          <p className={styles.stock}>I lager: {product.stock} st</p>
+          <p className={styles.stock}>I lager: {product.stock} st {product.stock === 0 ? (
+            <span className={styles.outOfStock}> (Slut i lager)</span>
+          ) : product.stock < 10 ? (
+            <span className={styles.lowStock}> (Få kvar)</span>
+          ) : " "}
+          </p>
 
           <button className="button" onClick={() => addToCart(product)}>
             Lägg i varukorgen

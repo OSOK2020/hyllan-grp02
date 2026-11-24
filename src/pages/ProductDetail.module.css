@@ -68,3 +68,13 @@
 .similar {
   margin-top: 64px;
 }
+
+.lowStock {
+  color: orange;
+  font-weight: 600;
+}
+
+.outOfStock {
+  color: red;
+  font-weight: 600;
+}
